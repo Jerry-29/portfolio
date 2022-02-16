@@ -735,13 +735,25 @@ textarea {
   width: 40px;
   height: 40px;
 }
-/* .skillDiv{
-  border: 1px solid;
-  display: grid;
-  grid-template-rows: repeat(5);
-  justify-content: space-between;
-  text-align: center;
-} */
+
+.skillDiv{
+  background-color: #0666bb;
+  align-items: center;
+  border-radius: 15px;
+  -webkit-clip-path: polygon(50% 0,90% 20%,100% 87%,75% 100%,25% 100%,0 88%,10% 20%);
+  clip-path: polygon(50% 0,90% 20%,100% 87%,75% 100%,25% 100%,0 88%,10% 20%);
+  color: #fff8dc;
+  display: flex;
+  flex-direction: column;
+  height: 55px;
+  justify-content: center;
+  margin: 20px;
+  padding: 10px;
+  transition: .5s;
+  width: 50px;
+ 
+}
+
 .skills__skill{
   display: grid;
   grid-template-rows: repeat(1,50px);
@@ -813,6 +825,7 @@ border: 2px solid #0062b9;
   font-weight: 700;
   border-right: 4px solid orange;
   box-sizing: border-box;
+  margin-left: 17.5%;
 }
 
 
@@ -821,7 +834,7 @@ border: 2px solid #0062b9;
     width: 0%;
   }
   to {
-    width: 58%;
+    width: 55%;
   }
 }
 @keyframes blink {
@@ -834,8 +847,37 @@ border: 2px solid #0062b9;
 }
 @media only screen and (max-width:1200px){
   .typewriter-text{
-    font-size: 30px;
-    margin-left: 15%;
+    font-size: 28px;
+    margin-left: 17.5%;
+  }
+  @keyframes typewriter {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 55%;
+    }
+  }
+}
+
+@media only screen and (max-width:800px){
+  .typewriter-text{
+    font-size: 26px;
+    margin-left: 13%;
+  }
+  @keyframes typewriter {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 63%;
+    }
+  }
+}
+
+@media only screen and (max-width:600px){
+  .typewriter-text{
+    font-size: 10px;
   }
   @keyframes typewriter {
     from {
@@ -843,19 +885,6 @@ border: 2px solid #0062b9;
     }
     to {
       width: 60%;
-    }
-  }
-}
-@media only screen and (max-width:600px){
-  .typewriter-text{
-    font-size: 14px;
-  }
-  @keyframes typewriter {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 80%;
     }
   }
 }
