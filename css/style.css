@@ -736,7 +736,7 @@ textarea {
   height: 40px;
 }
 
-.skillDiv{
+/* .skillDiv{
   background-color: #0666bb;
   align-items: center;
   border-radius: 15px;
@@ -752,7 +752,7 @@ textarea {
   transition: .5s;
   width: 50px;
  
-}
+} */
 
 .skills__skill{
   display: grid;
