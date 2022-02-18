@@ -296,6 +296,9 @@ textarea {
     width: 100%;
     display: block;
     object-fit: cover; }
+   
+    }
+
   .projects__row-content {
     padding: 2rem 0;
     display: flex;
@@ -508,17 +511,24 @@ textarea {
     justify-content: space-between;
     padding: 1rem 5rem; }
 
+
+
     @media screen and (width:22.5em){
       .header__content{
         width: 400px;
       }   
     } 
+
+    /* @media screen and (max-width:550px){
+      .header__content{
+        width: 690px;
+      }   
+    }  */
 @media screen and (max-width:37.5em){
 
   .header__content{
     width: 400px;
   }
-
 }
     @media only screen and (max-width: 56.25em) {
       .header__content {
@@ -915,3 +925,5 @@ border: 2px solid #0062b9;
   height: 36px;
   border-radius: 4px;
 }
+
+
