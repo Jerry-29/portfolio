@@ -7,6 +7,17 @@ const headerHamMenuCloseBtn = document.querySelector(
 )
 const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link')
 
+
+var vid = document.getElementById('vidAd');
+
+vid.onloadeddata = function(event) {
+  event.target.play();
+  event.target.playbackRate=5.0
+}
+
+vid.onloadeddata();
+// vid.playbackRate = 3.0;
+
 hamMenuBtn.addEventListener('click', () => {
   if (smallMenu.classList.contains('header__sm-menu--active')) {
     smallMenu.classList.remove('header__sm-menu--active')
@@ -36,3 +47,13 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+// const whatsappCloneVideo=document.getElementById('whatsappCloneVideo')
+
+// function playVideo(){
+//   whatsappCloneVideo.play()
+// }
+// whatsappCloneVideo.play()
+// window.addEventListener('load',()=>{
+//   whatsappCloneVideo.play()
+// })
