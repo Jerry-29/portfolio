@@ -833,10 +833,10 @@ border: 2px solid #0062b9;
     margin-top: 25%;
 }
 }
-.skillProject{
+/* .skillProject{
   display: grid;
   grid-template-columns: repeat(8,60px);
-}
+} */
 
 .widthMongoDb{
   width: 30rem;
