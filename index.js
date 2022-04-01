@@ -9,13 +9,19 @@ const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link')
 
 
 var vid = document.getElementById('vidAd');
-
+let vid2=document.getElementById('vidAd2')
+// console.log("check",vid)
 vid.onloadeddata = function(event) {
   event.target.play();
   event.target.playbackRate=5.0
 }
+vid2.onloadeddata = function(event) {
+  event.target.play();
+  event.target.playbackRate=3.0
+}
 
 vid.onloadeddata();
+vid2.onloadeddata();
 // vid.playbackRate = 3.0;
 
 hamMenuBtn.addEventListener('click', () => {
